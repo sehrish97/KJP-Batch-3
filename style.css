@@ -1,0 +1,17 @@
+ul li b{
+    color: blue;
+}
+ul li{
+    margin: 35px 0 35px 0;
+}
+ul{
+    border: 2px solid palegreen;
+    list-style: none;
+    
+}
+h1{
+    color: green;
+}
+h2{
+    color: brown;
+}

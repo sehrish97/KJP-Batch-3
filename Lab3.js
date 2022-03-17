@@ -49,12 +49,14 @@ for (let i = 0; i < studentName.length; i++) {
     } 
   }
 }
+let data=""
 // with ForEach Loop
 studentName.forEach(element => {
     FatherName.forEach((e,i)=>{
     check=element.split(" ");
     if(check[1]==[e]){
-      console.log(`${element} s father name found at index ${i} `);
+      data +=(`<li>${element} s father name found at index ${i} </li>`);
+      document.getElementById("content").innerHTML=data;
     }
   })
 });
