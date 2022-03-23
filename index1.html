@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light text-light bg-primary">
+        <div class="container-fluid text-light">
+          <a class="navbar-brand "  href="#"> Profile </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" >Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- <div class="abc">
+        <p id="a" class="card-text"></p>
+      <img id="b" alt="......">
+      </div> -->
+      <div class="card ">
+        <div class="card-body">
+        <h5 class="card-title">
+            <img id="c" alt="" height="100px" width="100px">
+            Nimra Ahmed</h5>
+            <p class="card-text" id="a"></p>
+            
+            <i >comments <sup id="d" style="color: red;"></sup></i>
+            <i >Likes <sup id="e" style="color: red;"></sup></i>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+        <img id="b" class="card-img-top" alt="...">
+      </div>
+     
+
+       
+     
+      <script>
+         // var emoji = require('emoji.json/emoji-compact.json'); 
+
+        let Post={};
+        Post.userID=1001;
+        Post.userName="Mark";
+        Post.userProfile="./images/cba.jpg";
+        Post.postImage="./images/facebookImage.jpg";
+        Post.postContent="'وہ محبت جس کا مقام اس دنیا کے تمام رشتوں میں پائی جانے والی محبت سے ارفع ہے، وہ محبت ماں کی محبت ہوتی ہے۔'";
+        Post.comments=[{
+            "userName":"Hayya",
+            "content":"Nice",
+            "timestamp":"25785",
+            "likesCount":2,
+            "likes":[{
+                
+                "userName":"Nimra",
+                "userProfile":"asad",
+                "likeType":"💖",
+                
+        
+            }]
+        },
+        {
+          "userName":"Hayya",
+          "content":"Nice",
+          "timestamp":"25785",
+          "likesCount":2,
+          "likes":[{
+              
+              "userName":"Nimra",
+              "userProfile":"asad",
+              "likeType":"💖",
+        }]
+      }]
+      Likes=Post.comments[0].likesCount
+      console.log(Likes)
+      comments=Post.comments.length
+      console.log(comments)
+        c.src=Post.userProfile
+        a=Post.postContent
+        b.src=Post.postImage
+        console.log(a);
+        document.getElementById("b").innerHTML +=b;
+        document.getElementById("a").innerHTML += a;
+        document.getElementById("c").innerHTML += c;
+        document.getElementById("d").innerHTML += comments;
+        document.getElementById("e").innerHTML += Likes;
+      </script>
+</body>
+
+</html>
