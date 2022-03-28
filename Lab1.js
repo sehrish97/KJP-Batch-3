@@ -21,3 +21,5 @@ console.log("Employee salary is "     + employee_id.employee_salary)
 console.log("Employee age is "        + employee_id.employee_age)
 console.log("Employee work days is "  + employee_id.employee_work_days)
 console.log("Employee job status is " + employee_id.employee_job_ststus)
+
+

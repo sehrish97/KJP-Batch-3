@@ -15,3 +15,12 @@ h1{
 h2{
     color: brown;
 }
+.input{
+    width: 200px;
+    height: 30px;
+    border: 1px solid blueviolet;
+    border-radius: 50px;
+}
+.input:active{
+        background-color: aquamarine;
+}
